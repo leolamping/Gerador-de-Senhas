@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+
+:root {
+    --color-primary-1: #2176b2;
+    --color-primary-2: #ff7e31;
+    --color-neutral-1: #f8fafc;
+    --color-neutral-2: #24232b;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+    font-family: "Rubik", monospace;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10vh;
+    background-color: var(--color-neutral-2);
+    color: var(--color-neutral-1);
+}
+
+header {
+    text-align: center;
+    font-weight: normal;
+    margin-bottom: 20px;
+    font-size: 20pt;
+    color: var(--color-primary-2);
+}
+
+#cabecalho {
+    margin-bottom: 20px;
+    font-size: 17pt;
+}
+
+#botao {
+    display: flex;
+    justify-content: space-between;
+}
+
+.botao {
+    background-color: initial;
+    background-image: linear-gradient(-180deg, #ff7e31, #e62c03);
+    border-radius: 6px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0 2px 4px;
+    color: #ffffff;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Inter, -apple-system, system-ui, Roboto, "Helvetica Neue",
+        Arial, sans-serif;
+    font-size: 15pt;
+    width: 150px;
+    height: 40px;
+    line-height: 40px;
+    outline: 0;
+    overflow: hidden;
+    padding: 0 20px;
+    pointer-events: auto;
+    position: relative;
+    text-align: center;
+    touch-action: manipulation;
+    user-select: none;
+    -webkit-user-select: none;
+    vertical-align: top;
+    white-space: nowrap;
+    z-index: 9;
+    border: 0;
+    transition: box-shadow 0.2s;
+    margin-bottom: 20px;
+}
+
+.botao:hover {
+    box-shadow: rgba(253, 76, 0, 0.5) 0 3px 8px;
+}
+
+#resultado {
+    font-size: 15pt;
+}
